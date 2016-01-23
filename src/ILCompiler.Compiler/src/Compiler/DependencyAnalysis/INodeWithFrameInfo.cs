@@ -8,6 +8,9 @@ namespace ILCompiler.DependencyAnalysis
         public int StartOffset;
         public int EndOffset;
         public byte[] BlobData;
+
+        // The size of CFI_CODE blob that RyuJit passes.
+        public const int CfiBlobSize = 8;
     }
 
     public interface INodeWithFrameInfo
